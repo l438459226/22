@@ -1,0 +1,977 @@
+initcall: 000446e1
+
+
+U-Boot 2017.09-g2217b4e-dirty (Mar 10 2020 - 02:45:47 +0900)
+
+initcall: 0000d821
+U-Boot code: 00000000 -> 00074AC8  BSS: -> 000B62D0
+initcall: 0000dc31
+Model: Firefly-RK3288
+initcall: 0000d919
+DRAM:  initcall: 00002319
+malloc_simple: size=3c, ptr=97c, limit=2000: fe940
+rockchip_sdram_size ff73009c 32817281
+rank 1 cs0_col 10 bk 3 cs0_row 15                               bw 2 row_3_4 0
+rank 1 cs0_col 10 bk 3 cs0_row 15                               bw 2 row_3_4 0
+SDRAM base=0, size=80000000
+initcall: 0000da01
+Monitor len: 000B62D0
+Ram size: 80000000
+Ram top: 80000000
+initcall: 0000d6c9
+initcall: 0000d6e5
+TLB table from 7fff0000 to 7fff4000
+initcall: 0000d8f9
+Reserving 2000000 Bytes for video at: 7df00000
+Video frame buffers from 7df00000 to 7fff0000
+initcall: 0000d95f
+initcall: 0000d7e1
+Reserving 728k for U-Boot at: 7de49000
+initcall: 0000d7b9
+Reserving 32800k for malloc() at: 7be41000
+initcall: 0000d8c1
+Reserving 88 Bytes for Board Info at: 7be40fa8
+initcall: 0000d963
+initcall: 0000d791
+Reserving 216 Bytes for Global Data at: 7be40ed0
+initcall: 0000d741
+Reserving 7648 Bytes for FDT at: 7be3f0f0
+initcall: 0000d967
+initcall: 0000d957
+initcall: 0000da59
+initcall: 000020cd
+initcall: 0000d975
+
+RAM Configuration:
+Bank #0: 0 132 MiB
+Bank #1: 9200000 1.9 GiB
+
+DRAM:  2 GiB
+initcall: 0000d72d
+New Stack Pointer is: 7be3d0e0
+initcall: 0000d895
+initcall: 0000d96b
+initcall: 0000d841
+Relocation Offset is: 7de49000
+Relocating to 7de49000, new gd at 7be40ed0, sp at 7be3d0e0
+initcall: 7de56bf3
+initcall: 7de56a99
+initcall: 0000dbe9 (relocated to 7de56be9)
+dram_bank_mmu_setup: bank: 0
+dram_bank_mmu_setup: bank: 1
+initcall: 0000dbc1 (relocated to 7de56bc1)
+efi_runtime_relocate: Relocating to offset=7de49000
+efi_runtime_relocate: Setting 7debd978 to 7debd9d0
+efi_runtime_relocate: Setting 7debd984 to 7debb628
+efi_runtime_relocate: Setting 7debd98c to 7de9498c
+efi_runtime_relocate: Setting 7debd994 to 7de9498c
+efi_runtime_relocate: Setting 7debd998 to 7debd9e8
+efi_runtime_relocate: Setting 7debd99c to 7de93a10
+efi_runtime_relocate: Setting 7debd9a4 to 7debd9a8
+efi_runtime_relocate: Setting 7debda00 to 7de85fdd
+efi_runtime_relocate: Setting 7debda04 to 7debd94d
+efi_runtime_relocate: Setting 7debda08 to 7debd945
+efi_runtime_relocate: Setting 7debda0c to 7debd945
+efi_runtime_relocate: Setting 7debda10 to 7de8612d
+efi_runtime_relocate: Setting 7debda14 to 7debd955
+efi_runtime_relocate: Setting 7debda18 to 7debd94d
+efi_runtime_relocate: Setting 7debda1c to 7debd94d
+efi_runtime_relocate: Setting 7debda20 to 7debd94d
+efi_runtime_relocate: Setting 7debda24 to 7debd94d
+efi_runtime_relocate: Setting 7debda28 to 7de85fe5
+initcall: 0000dab1 (relocated to 7de56ab1)
+initcall: 0000dbf7 (relocated to 7de56bf7)
+initcall: 0000db91 (relocated to 7de56b91)
+Pre-reloc malloc() used 0x97c bytes (2 KB)
+using memory 0x7be41000-0x7de49000 for malloc()
+initcall: 0000d6ad (relocated to 7de566ad)
+initcall: 0000db85 (relocated to 7de56b85)
+initcall: 0000dbfb (relocated to 7de56bfb)
+initcall: 0000da95 (relocated to 7de56a95)
+initcall: 0001e231 (relocated to 7de67231)
+GIC CPU mask = 0x01010101
+initcall: 0000db7b (relocated to 7de56b7b)
+initcall: 00001739 (relocated to 7de4a739)
+initcall: 0000db6f (relocated to 7de56b6f)
+of_live_build: start
+ -> unflatten_device_tree()
+Unflattening device tree:
+magic: d00dfeed
+size: 00000dc4
+version: 00000011
+  size is be4, allocating...
+  unflattening 7be41008...
+fixed up name for  -> 
+fixed up name for chosen -> chosen
+fixed up name for aliases -> aliases
+fixed up name for dwmmc@ff0c0000 -> dwmmc
+fixed up name for serial@ff690000 -> serial
+fixed up name for dmc@ff610000 -> dmc
+fixed up name for power-management@ff730000 -> power-management
+fixed up name for syscon@ff740000 -> syscon
+fixed up name for clock-controller@ff760000 -> clock-controller
+fixed up name for syscon@ff770000 -> syscon
+fixed up name for syscon@ffac0000 -> syscon
+fixed up name for pinctrl -> pinctrl
+fixed up name for gpio3@ff7a0000 -> gpio3
+fixed up name for gpio8@ff7f0000 -> gpio8
+fixed up name for leds -> leds
+fixed up name for work -> work
+fixed up name for power -> power
+fixed up name for config -> config
+ <- unflatten_device_tree()
+adding DT alias:gpio3: stem=gpio id=3 node=/pinctrl/gpio3@ff7a0000
+adding DT alias:gpio8: stem=gpio id=8 node=/pinctrl/gpio8@ff7f0000
+adding DT alias:mmc1: stem=mmc id=1 node=/dwmmc@ff0c0000
+adding DT alias:mshc1: stem=mshc id=1 node=/dwmmc@ff0c0000
+adding DT alias:serial2: stem=serial id=2 node=/serial@ff690000
+of_live_build: stop
+initcall: 0000db5d (relocated to 7de56b5d)
+mmc_bind: alias ret=1, devnum=1
+led_gpio_bind
+ofnode_read_string: label: firefly:blue:user
+led_gpio_bind
+ofnode_read_string: label: firefly:green:power
+led_gpio_bind
+ofnode_get_name node not valid
+ofnode_get_name node not valid
+ofnode_get_name node not valid
+ofnode_get_name node not valid
+ofnode_get_name node not valid
+ofnode_get_name node not valid
+ofnode_get_name node not valid
+ofnode_get_name node not valid
+ofnode_get_name node not valid
+ofnode_get_name node not valid
+ofnode_get_name node not valid
+ofnode_get_name node not valid
+ofnode_get_name node not valid
+initcall: 0000db15 (relocated to 7de56b15)
+fdtdec_get_config_int: load-environment
+fdtdec_get_int: load-environment: (not found)
+blk_find_device: if_type=6, devnum=0: dwmmc@ff0c0000.blk, 6, 1
+MMC Device 0 not found
+*** Warning - No MMC card found, using default environment
+
+Destroy Hash Table: 7debb4dc table = 00000000
+Create Hash Table: N=512
+INSERT: table 7debb4dc, filled 1/521 rv 7be4479c ==> name="bootcmd" value="boot_android ${devtype} ${devnum};bootrkp;run distro_bootcmd;"
+INSERT: table 7debb4dc, filled 2/521 rv 7be44ff8 ==> name="bootdelay" value="12"
+INSERT: table 7debb4dc, filled 3/521 rv 7be44378 ==> name="baudrate" value="1500000"
+DELETE CANDIDATE: "preboot"
+hdelete: DELETE key "preboot"
+DELETE ERROR ##############################
+INSERT: table 7debb4dc, filled 4/521 rv 7be43b94 ==> name="arch" value="arm"
+INSERT: table 7debb4dc, filled 5/521 rv 7be45390 ==> name="cpu" value="armv7"
+INSERT: table 7debb4dc, filled 6/521 rv 7be44b48 ==> name="board" value="firefly-rk3288"
+INSERT: table 7debb4dc, filled 7/521 rv 7be43e50 ==> name="board_name" value="firefly-rk3288"
+INSERT: table 7debb4dc, filled 8/521 rv 7be4541c ==> name="vendor" value="firefly"
+INSERT: table 7debb4dc, filled 9/521 rv 7be459e4 ==> name="soc" value="rockchip"
+INSERT: table 7debb4dc, filled 10/521 rv 7be45d7c ==> name="fdt_high" value="0x0fffffff"
+INSERT: table 7debb4dc, filled 11/521 rv 7be43c48 ==> name="initrd_high" value="0x0fffffff"
+INSERT: table 7debb4dc, filled 12/521 rv 7be453a4 ==> name="partitions" value="uuid_disk=${uuid_gpt_disk};name=loader1,start=32K,size=4000K,uuid=${uuid_gpt_loader1};name=loader2,start=8MB,size=4MB,uuid=${uuid_gpt_loader2};name=trust,size=4M,uuid=${uuid_gpt_atf};name=boot,size=112M,bootable,uuid=${uuid_gpt_boot};name=rootfs,size=-,uuid=69DAD710-2CE4-4E3C-B16C-21A1D49ABED3;"
+INSERT: table 7debb4dc, filled 13/521 rv 7be43ff4 ==> name="scriptaddr" value="0x00000000"
+INSERT: table 7debb4dc, filled 14/521 rv 7be43e64 ==> name="pxefile_addr_r" value="0x00100000"
+INSERT: table 7debb4dc, filled 15/521 rv 7be4415c ==> name="fdt_addr_r" value="0x01f00000"
+INSERT: table 7debb4dc, filled 16/521 rv 7be44800 ==> name="kernel_addr_r" value="0x02000000"
+INSERT: table 7debb4dc, filled 17/521 rv 7be45520 ==> name="ramdisk_addr_r" value="0x04000000"
+INSERT: table 7debb4dc, filled 18/521 rv 7be442d8 ==> name="stdin" value="serial,usbkbd"
+INSERT: table 7debb4dc, filled 19/521 rv 7be45408 ==> name="stdout" value="serial,vidconsole"
+INSERT: table 7debb4dc, filled 20/521 rv 7be44abc ==> name="stderr" value="serial,vidconsole"
+INSERT: table 7debb4dc, filled 21/521 rv 7be43784 ==> name="preboot" value="usb start"
+INSERT: table 7debb4dc, filled 22/521 rv 7be44210 ==> name="rkimg_bootdev" value="if mmc dev 1 && rkimgtest mmc 1; then setenv devtype mmc; setenv devnum 1; echo Boot from SDcard;elif mmc dev 0; then setenv devtype mmc; setenv devnum 0;elif rknand dev 0; then setenv devtype rknand; setenv devnum 0;elif rksfc dev 0; then setenv devtype spinand; setenv devnum 0;elif rksfc dev 1; then setenv devtype spinor; setenv devnum 1;fi; "
+INSERT: table 7debb4dc, filled 23/521 rv 7be45278 ==> name="mmc_boot" value="if mmc dev ${devnum}; then setenv devtype mmc; run scan_dev_for_boot_part; fi"
+INSERT: table 7debb4dc, filled 24/521 rv 7be44ea4 ==> name="boot_efi_binary" value="load ${devtype} ${devnum}:${distro_bootpart} ${kernel_addr_r} efi/boot/bootarm.efi; if fdt addr ${fdt_addr_r}; then bootefi ${kernel_addr_r} ${fdt_addr_r};else bootefi ${kernel_addr_r} ${fdtcontroladdr};fi"
+INSERT: table 7debb4dc, filled 25/521 rv 7be45cf0 ==> name="load_efi_dtb" value="load ${devtype} ${devnum}:${distro_bootpart} ${fdt_addr_r} ${prefix}${efi_fdtfile}"
+INSERT: table 7debb4dc, filled 26/521 rv 7be45458 ==> name="efi_dtb_prefixes" value="/ /dtb/ /dtb/current/"
+INSERT: table 7debb4dc, filled 27/521 rv 7be437c0 ==> name="scan_dev_for_efi" value="setenv efi_fdtfile ${fdtfile}; if test -z "${fdtfile}" -a -n "${soc}"; then setenv efi_fdtfile ${soc}-${board}${boardver}.dtb; fi; for prefix in ${efi_dtb_prefixes}; do if test -e ${devtype} ${devnum}:${distro_bootpart} ${prefix}${efi_fdtfile}; then run load_efi_dtb; fi;done;if test -e ${devtype} ${devnum}:${distro_bootpart} efi/boot/bootarm.efi; then echo Found EFI removable media binary efi/boot/bootarm.efi; run boot_efi_binary; echo EFI LOAD FAILED: continuing...; fi; setenv efi_fdtfile"
+INSERT: table 7debb4dc, filled 28/521 rv 7be437ac ==> name="boot_prefixes" value="/ /boot/"
+INSERT: table 7debb4dc, filled 29/521 rv 7be43810 ==> name="boot_scripts" value="boot.scr.uimg boot.scr"
+INSERT: table 7debb4dc, filled 30/521 rv 7be45f84 ==> name="boot_script_dhcp" value="boot.scr.uimg"
+INSERT: table 7debb4dc, filled 31/521 rv 7be45570 ==> name="boot_targets" value="mmc1 mmc0 pxe dhcp "
+INSERT: table 7debb4dc, filled 32/521 rv 7be443dc ==> name="boot_extlinux" value="sysboot ${devtype} ${devnum}:${distro_bootpart} any ${scriptaddr} ${prefix}extlinux/extlinux.conf"
+INSERT: table 7debb4dc, filled 33/521 rv 7be45e94 ==> name="scan_dev_for_extlinux" value="if test -e ${devtype} ${devnum}:${distro_bootpart} ${prefix}extlinux/extlinux.conf; then echo Found ${prefix}extlinux/extlinux.conf; run boot_extlinux; echo SCRIPT FAILED: continuing...; fi"
+INSERT: table 7debb4dc, filled 34/521 rv 7be44080 ==> name="boot_a_script" value="load ${devtype} ${devnum}:${distro_bootpart} ${scriptaddr} ${prefix}${script}; source ${scriptaddr}"
+INSERT: table 7debb4dc, filled 35/521 rv 7be45da4 ==> name="scan_dev_for_scripts" value="for script in ${boot_scripts}; do if test -e ${devtype} ${devnum}:${distro_bootpart} ${prefix}${script}; then echo Found U-Boot script ${prefix}${script}; run boot_a_script; echo SCRIPT FAILED: continuing...; fi; done"
+INSERT: table 7debb4dc, filled 36/521 rv 7be45cb4 ==> name="scan_dev_for_boot" value="echo Scanning ${devtype} ${devnum}:${distro_bootpart}...; for prefix in ${boot_prefixes}; do run scan_dev_for_extlinux; run scan_dev_for_scripts; done;run scan_dev_for_efi;"
+INSERT: table 7debb4dc, filled 37/521 rv 7be45bc4 ==> name="scan_dev_for_boot_part" value="part list ${devtype} ${devnum} -bootable devplist; env exists devplist || setenv devplist 1; for distro_bootpart in ${devplist}; do if fstype ${devtype} ${devnum}:${distro_bootpart} bootfstype; then run scan_dev_for_boot; fi; done"
+INSERT: table 7debb4dc, filled 38/521 rv 7be45764 ==> name="bootcmd_mmc1" value="setenv devnum 1; run mmc_boot"
+INSERT: table 7debb4dc, filled 39/521 rv 7be43ef0 ==> name="bootcmd_mmc0" value="setenv devnum 0; run mmc_boot"
+INSERT: table 7debb4dc, filled 40/521 rv 7be44710 ==> name="bootcmd_pxe" value="dhcp; if pxe get; then pxe boot; fi"
+INSERT: table 7debb4dc, filled 41/521 rv 7be44f30 ==> name="bootcmd_dhcp" value="if dhcp ${scriptaddr} ${boot_script_dhcp}; then source ${scriptaddr}; fi;setenv efi_fdtfile ${fdtfile}; if test -z "${fdtfile}" -a -n "${soc}"; then setenv efi_fdtfile ${soc}-${board}${boardver}.dtb; fi; setenv efi_old_vci ${bootp_vci};setenv efi_old_arch ${bootp_arch};setenv bootp_vci PXEClient:Arch:00010:UNDI:003000;setenv bootp_arch 0xa;if dhcp ${kernel_addr_r}; then tftpboot ${fdt_addr_r} dtb/${efi_fdtfile};if fdt addr ${fdt_addr_r}; then bootefi ${kernel_addr_r} ${fdt_addr_r}; else bootefi ${kernel_addr_r} ${fdtcontroladdr};fi;fi;setenv bootp_vci ${efi_old_vci};setenv bootp_arch ${efi_old_arch};setenv efi_fdtfile;setenv efi_old_arch;setenv efi_old_vci;"
+INSERT: table 7debb4dc, filled 42/521 rv 7be44bd4 ==> name="distro_bootcmd" value="for target in ${boot_targets}; do run bootcmd_${target}; done"
+INSERT: free(data = 7be42660)
+INSERT: done
+env_load: Environment failed to load (err=-5)
+Initial value for argc=3
+Final value for argc=3
+initcall: 00001709 (relocated to 7de4a709)
+uclass_get_device_by_seq
+ofnode_read_u32: rockchip,grf: of_read_u32: rockchip,grf: 0x37 (55)
+** translation for device /syscon@ff770000 **
+bus is default (na=1, ns=1) on /
+translating address: ff770000
+reached root node
+ofnode_read_u32: rockchip,pmu: of_read_u32: rockchip,pmu: 0x2 (2)
+** translation for device /power-management@ff730000 **
+bus is default (na=1, ns=1) on /
+translating address: ff730000
+reached root node
+bank 0, iomux 0 has iom_offset 0x84 drv_offset 0x0
+bank 0, iomux 1 has iom_offset 0x88 drv_offset 0x4
+bank 0, iomux 2 has iom_offset 0x8c drv_offset 0x8
+bank 1, iomux 0 has iom_offset 0x0 drv_offset 0x0
+bank 1, iomux 1 has iom_offset 0x4 drv_offset 0x0
+bank 1, iomux 2 has iom_offset 0x8 drv_offset 0x0
+bank 1, iomux 3 has iom_offset 0xc drv_offset 0x0
+bank 2, iomux 0 has iom_offset 0x10 drv_offset 0x0
+bank 2, iomux 1 has iom_offset 0x14 drv_offset 0x0
+bank 2, iomux 2 has iom_offset 0x18 drv_offset 0x0
+bank 2, iomux 3 has iom_offset 0x1c drv_offset 0x0
+bank 3, iomux 0 has iom_offset 0x20 drv_offset 0x0
+bank 3, iomux 1 has iom_offset 0x24 drv_offset 0x0
+bank 3, iomux 2 has iom_offset 0x28 drv_offset 0x0
+bank 3, iomux 3 has iom_offset 0x2c drv_offset 0x0
+bank 4, iomux 0 has iom_offset 0x34 drv_offset 0x0
+bank 4, iomux 1 has iom_offset 0x3c drv_offset 0x0
+bank 4, iomux 2 has iom_offset 0x44 drv_offset 0x0
+bank 4, iomux 3 has iom_offset 0x48 drv_offset 0x0
+bank 5, iomux 0 has iom_offset 0x4c drv_offset 0x0
+bank 5, iomux 1 has iom_offset 0x50 drv_offset 0x0
+bank 5, iomux 2 has iom_offset 0x54 drv_offset 0x0
+bank 5, iomux 3 has iom_offset 0x58 drv_offset 0x0
+bank 6, iomux 0 has iom_offset 0x5c drv_offset 0x0
+bank 6, iomux 1 has iom_offset 0x60 drv_offset 0x0
+bank 6, iomux 2 has iom_offset 0x64 drv_offset 0x0
+bank 6, iomux 3 has iom_offset 0x68 drv_offset 0x0
+bank 7, iomux 0 has iom_offset 0x6c drv_offset 0x0
+bank 7, iomux 1 has iom_offset 0x70 drv_offset 0x0
+bank 7, iomux 2 has iom_offset 0x74 drv_offset 0x0
+bank 7, iomux 3 has iom_offset 0x7c drv_offset 0x0
+bank 8, iomux 0 has iom_offset 0x80 drv_offset 0x0
+bank 8, iomux 1 has iom_offset 0x84 drv_offset 0x0
+ofnode_read_u32: bus-width: of_read_u32: bus-width: 0x4 (4)
+ofnode_read_bool: non-removable: false
+ofnode_read_u32: fifo-depth: of_read_u32: fifo-depth: 0x100 (256)
+ofnode_read_bool: fifo-mode: false
+ofnode_read_u32_array: clock-freq-min-max: of_read_u32_array: clock-freq-min-max: ofnode_read_u32: max-frequency: of_read_u32: max-frequency: 0x8f0d180 (150000000)
+clk_get_by_indexed_prop(dev=7be41d40, index=0, clk=7be42698)
+of_read_u32: #clock-cells: 0x1 (1)
+clk_of_xlate_default(clk=7be42698)
+clk_request(dev=7be421a8, clk=7be42698)
+clk_get_by_name(dev=7be41d40, name=ciu-sample, clk=7be426a0)
+fdt_stringlist_search() failed: -22
+MMC: sample clock not found, not support hs200!
+ofnode_read_bool: mmc-hs200-1_8v: false
+ofnode_read_u32: default-sample-phase: of_read_u32: default-sample-phase: (not found)
+clk_set_rate(clk=7be42698, rate=400000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+dwmmc@ff0c0000: 1
+blk_find_device: if_type=6, devnum=1: dwmmc@ff0c0000.blk, 6, 1
+gpio_request_tail: Node 'dwmmc@ff0c0000', property 'cd-gpios', failed to request GPIO index 0: -2
+ofnode_read_u32: vmmc-supply: of_read_u32: vmmc-supply: 0xd (13)
+dwmmc@ff0c0000: No vmmc supply
+Buswidth = 1, clock: 0
+Buswidth = 1, clock: 400000
+clk_set_rate(clk=7be42698, rate=400000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Buswidth = 1, clock: 400000
+clk_set_rate(clk=7be42698, rate=400000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Sending CMD0
+Sending CMD8
+Sending CMD55
+Sending CMD41
+Sending CMD55
+Sending CMD41
+Sending CMD2
+Sending CMD3
+Sending CMD9
+Sending CMD7
+Sending CMD55
+Unaligned buffer length 8
+Sending CMD51
+Sending CMD6
+Sending CMD6
+Sending CMD55
+Sending CMD6
+Buswidth = 4, clock: 400000
+clk_set_rate(clk=7be42698, rate=400000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Sending CMD55
+Sending CMD13
+Buswidth = 4, clock: 50000000
+clk_set_rate(clk=7be42698, rate=50000000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+blk_find_device: if_type=6, devnum=1: dwmmc@ff0c0000.blk, 6, 1
+Sending CMD16
+Sending CMD17
+part_init: try 'EFI': ret=-1
+part_test_rkparm
+rkparm_init_param
+blk_find_device: if_type=6, devnum=1: dwmmc@ff0c0000.blk, 6, 1
+Sending CMD16
+Sending CMD18
+Sending CMD12
+@@@@@param->params=_VER: 8.1
+MACHINE_MODEL:rk3288
+MACHINE_ID:007
+MANUFACTURER:RK3288
+MAGIC: 0x5041524B
+ATAG: 0x00200800
+MACHINE: 3288
+CHECK_MASK: 0x80
+PWR_HLD: 0,0,A,0,1
+TYPE: GPT
+CMDLINE: mtdparts=rk29xxnand:0x00002000@0x00002000(uboot),0x00002000@0x00004000(trust),0x00010000@0x0000c000(resource),0x00040000@0x00020000(backup),0x00040000@0x0007a000(misc),0x000f0000@0x000ea000(rootfs)
+uuid:rootfs=614e0000-0000-4b53-8000-1d28000054a9
+rkparm_param_parse
+Initial value for argc=3
+Final value for argc=3
+part_init: try 'RKPARM': ret=0
+blk_find_device: if_type=6, devnum=1: dwmmc@ff0c0000.blk, 6, 1
+switch to partitions #0, OK
+mmc1 is current device
+blk_get_devnum_by_typename: if_type=6, devnum=1: dwmmc@ff0c0000.blk, 6, 1
+blk_get_devnum_by_typename: Device desc 7be41f30
+blk_find_device: if_type=6, devnum=1: dwmmc@ff0c0000.blk, 6, 1
+Sending CMD16
+Sending CMD18
+Sending CMD12
+do_rkimg_test found IDB in SDcard
+env_update_filter: [a_item 0]: mtdparts=rk29xxnand:0x00002000@0x00002000(uboot),0x00002000@0x00004000(trust),0x00010000@0x0000c000(resource),0x00040000@0x00020000(backup),0x00040000@0x0007a000(misc),0x000f0000@0x000ea000(rootfs)
+env_update_filter: <v_item 0>: sdfwupdate ... do append
+env_append: varvalue = sdfwupdate
+env_exist: not find in middle one
+env_exist: not find in last one
+env_exist: not find in first one
+env_append: reall append: sdfwupdate
+env_append: newvalue:  mtdparts=rk29xxnand:0x00002000@0x00002000(uboot),0x00002000@0x00004000(trust),0x00010000@0x0000c000(resource),0x00040000@0x00020000(backup),0x00040000@0x0007a000(misc),0x000f0000@0x000ea000(rootfs) sdfwupdate
+Initial value for argc=3
+Final value for argc=3
+Initial value for argc=3
+Final value for argc=3
+Initial value for argc=3
+Final value for argc=3
+Boot from SDcard
+env_exist: not find in middle one
+env_exist: not find in last one
+env_exist: not find in first one
+env_update_filter: [a_item 0]: mtdparts=rk29xxnand:0x00002000@0x00002000(uboot),0x00002000@0x00004000(trust),0x00010000@0x0000c000(resource),0x00040000@0x00020000(backup),0x00040000@0x0007a000(misc),0x000f0000@0x000ea000(rootfs)
+env_update_filter: [a_item 1]: sdfwupdate
+env_update_filter: <v_item 0>: storagemedia=sd 
+env_update_filter: <v_item 1>: androidboot.mode=sd 
+env_update_filter: <v_title>: storagemedia
+env_update_filter: [a_title]: mtdparts
+env_update_filter: append 'storagemedia=sd' to the 'bootargs' end
+env_append: varvalue = storagemedia=sd
+env_exist: not find in middle one
+env_exist: not find in last one
+env_exist: not find in first one
+env_append: reall append: storagemedia=sd
+env_append: newvalue:  mtdparts=rk29xxnand:0x00002000@0x00002000(uboot),0x00002000@0x00004000(trust),0x00010000@0x0000c000(resource),0x00040000@0x00020000(backup),0x00040000@0x0007a000(misc),0x000f0000@0x000ea000(rootfs) sdfwupdate storagemedia=sd
+Initial value for argc=3
+Final value for argc=3
+env_update_filter: <v_title>: androidboot.mode
+env_update_filter: [a_title]: mtdparts
+env_update_filter: append 'androidboot.mode=sd' to the 'bootargs' end
+env_append: varvalue = androidboot.mode=sd
+env_exist: not find in middle one
+env_exist: not find in last one
+env_exist: not find in first one
+env_append: reall append: androidboot.mode=sd
+env_append: newvalue:  mtdparts=rk29xxnand:0x00002000@0x00002000(uboot),0x00002000@0x00004000(trust),0x00010000@0x0000c000(resource),0x00040000@0x00020000(backup),0x00040000@0x0007a000(misc),0x000f0000@0x000ea000(rootfs) sdfwupdate storagemedia=sd androidboot.mode=sd
+Initial value for argc=3
+Final value for argc=3
+blk_find_device: if_type=6, devnum=1: dwmmc@ff0c0000.blk, 6, 1
+blk_find_device: if_type=6, devnum=1: dwmmc@ff0c0000.blk, 6, 1
+name:misc,info->name:uboot,start:16384,size:4194304,blksz:512
+name:misc,info->name:trust,start:24576,size:4194304,blksz:512
+name:misc,info->name:resource,start:57344,size:33554432,blksz:512
+name:misc,info->name:backup,start:139264,size:134217728,blksz:512
+name:misc,info->name:misc,start:507904,size:134217728,blksz:512
+blk_find_device: if_type=6, devnum=1: dwmmc@ff0c0000.blk, 6, 1
+Sending CMD16
+Sending CMD18
+Sending CMD12
+boot mode: None
+name:boot,info->name:uboot,start:16384,size:4194304,blksz:512
+name:boot,info->name:trust,start:24576,size:4194304,blksz:512
+name:boot,info->name:resource,start:57344,size:33554432,blksz:512
+name:boot,info->name:backup,start:139264,size:134217728,blksz:512
+name:boot,info->name:misc,start:507904,size:134217728,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+name:boot,info->name:rootfs,start:966656,size:503316480,blksz:512
+init_resource_list: failed to get boot part, ret=-1
+init_resource_list: Load resource from resource part
+name:resource,info->name:uboot,start:16384,size:4194304,blksz:512
+name:resource,info->name:trust,start:24576,size:4194304,blksz:512
+name:resource,info->name:resource,start:57344,size:33554432,blksz:512
+blk_find_device: if_type=6, devnum=1: dwmmc@ff0c0000.blk, 6, 1
+Sending CMD16
+Sending CMD17
+resource image header:
+magic:RSCE
+version:0
+c_version:0
+blks:1
+c_offset:1
+e_blks:1
+e_num:2
+blk_find_device: if_type=6, devnum=1: dwmmc@ff0c0000.blk, 6, 1
+Sending CMD16
+Sending CMD18
+Sending CMD12
+entry:7be57800  rk-kernel.dtb offset:3 size:77540
+entry:7be57a00  logo.bmp offset:155 size:127818
+DTB: rk-kernel.dtb
+blk_find_device: if_type=6, devnum=1: dwmmc@ff0c0000.blk, 6, 1
+blk_find_device: if_type=6, devnum=1: dwmmc@ff0c0000.blk, 6, 1
+Sending CMD16
+Sending CMD18
+dwmci_data_transfer: DATA ERROR!
+mmc_bread: Failed to read blocks
+gpio_request_tail: Node 'dwmmc@ff0c0000', property 'cd-gpios', failed to request GPIO index 0: -2
+ofnode_read_u32: vmmc-supply: of_read_u32: vmmc-supply: 0xd (13)
+dwmmc@ff0c0000: No vmmc supply
+Buswidth = 1, clock: 50000000
+clk_set_rate(clk=7be42698, rate=50000000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Buswidth = 1, clock: 400000
+clk_set_rate(clk=7be42698, rate=400000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Buswidth = 1, clock: 400000
+clk_set_rate(clk=7be42698, rate=400000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Sending CMD0
+Sending CMD8
+Sending CMD55
+Sending CMD41
+Sending CMD55
+Sending CMD41
+Sending CMD2
+Sending CMD3
+Sending CMD9
+Sending CMD7
+Sending CMD55
+Unaligned buffer length 8
+Sending CMD51
+Sending CMD6
+Sending CMD6
+Sending CMD55
+Sending CMD6
+Buswidth = 4, clock: 400000
+clk_set_rate(clk=7be42698, rate=400000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Sending CMD55
+Sending CMD13
+Buswidth = 4, clock: 50000000
+clk_set_rate(clk=7be42698, rate=50000000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+blk_find_device: if_type=6, devnum=1: dwmmc@ff0c0000.blk, 6, 1
+Sending CMD16
+Sending CMD17
+part_init: try 'EFI': ret=-1
+part_test_rkparm
+part_init: try 'RKPARM': ret=0
+Sending CMD18
+dwmci_data_transfer: DATA ERROR!
+mmc_bread: Re-init mmc_read_blocks error
+gpio_request_tail: Node 'dwmmc@ff0c0000', property 'cd-gpios', failed to request GPIO index 0: -2
+ofnode_read_u32: vmmc-supply: of_read_u32: vmmc-supply: 0xd (13)
+dwmmc@ff0c0000: No vmmc supply
+Buswidth = 1, clock: 50000000
+clk_set_rate(clk=7be42698, rate=50000000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Buswidth = 1, clock: 400000
+clk_set_rate(clk=7be42698, rate=400000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Buswidth = 1, clock: 400000
+clk_set_rate(clk=7be42698, rate=400000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Sending CMD0
+Sending CMD8
+Sending CMD55
+Sending CMD41
+Sending CMD55
+Sending CMD41
+Sending CMD2
+Sending CMD3
+Sending CMD9
+Sending CMD7
+Sending CMD55
+Unaligned buffer length 8
+Sending CMD51
+Sending CMD6
+Sending CMD6
+Sending CMD55
+Sending CMD6
+Buswidth = 4, clock: 400000
+clk_set_rate(clk=7be42698, rate=400000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Sending CMD55
+Sending CMD13
+Buswidth = 4, clock: 50000000
+clk_set_rate(clk=7be42698, rate=50000000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+blk_find_device: if_type=6, devnum=1: dwmmc@ff0c0000.blk, 6, 1
+Sending CMD16
+Sending CMD17
+part_init: try 'EFI': ret=-1
+part_test_rkparm
+part_init: try 'RKPARM': ret=0
+Sending CMD18
+dwmci_data_transfer: DATA ERROR!
+mmc_bread: Re-init mmc_read_blocks error
+gpio_request_tail: Node 'dwmmc@ff0c0000', property 'cd-gpios', failed to request GPIO index 0: -2
+ofnode_read_u32: vmmc-supply: of_read_u32: vmmc-supply: 0xd (13)
+dwmmc@ff0c0000: No vmmc supply
+Buswidth = 1, clock: 50000000
+clk_set_rate(clk=7be42698, rate=50000000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Buswidth = 1, clock: 400000
+clk_set_rate(clk=7be42698, rate=400000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Buswidth = 1, clock: 400000
+clk_set_rate(clk=7be42698, rate=400000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Sending CMD0
+Sending CMD8
+Sending CMD55
+Sending CMD41
+Sending CMD55
+Sending CMD41
+Sending CMD2
+Sending CMD3
+Sending CMD9
+Sending CMD7
+Sending CMD55
+Unaligned buffer length 8
+Sending CMD51
+Sending CMD6
+Sending CMD6
+Sending CMD55
+Sending CMD6
+Buswidth = 4, clock: 400000
+clk_set_rate(clk=7be42698, rate=400000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Sending CMD55
+Sending CMD13
+Buswidth = 4, clock: 50000000
+clk_set_rate(clk=7be42698, rate=50000000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+blk_find_device: if_type=6, devnum=1: dwmmc@ff0c0000.blk, 6, 1
+Sending CMD16
+Sending CMD17
+part_init: try 'EFI': ret=-1
+part_test_rkparm
+part_init: try 'RKPARM': ret=0
+Sending CMD18
+dwmci_data_transfer: DATA ERROR!
+mmc_bread: Re-init mmc_read_blocks error
+gpio_request_tail: Node 'dwmmc@ff0c0000', property 'cd-gpios', failed to request GPIO index 0: -2
+ofnode_read_u32: vmmc-supply: of_read_u32: vmmc-supply: 0xd (13)
+dwmmc@ff0c0000: No vmmc supply
+Buswidth = 1, clock: 50000000
+clk_set_rate(clk=7be42698, rate=50000000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Buswidth = 1, clock: 400000
+clk_set_rate(clk=7be42698, rate=400000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Buswidth = 1, clock: 400000
+clk_set_rate(clk=7be42698, rate=400000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Sending CMD0
+Sending CMD8
+Sending CMD55
+Sending CMD41
+Sending CMD55
+Sending CMD41
+Sending CMD2
+Sending CMD3
+Sending CMD9
+Sending CMD7
+Sending CMD55
+Unaligned buffer length 8
+Sending CMD51
+Sending CMD6
+Sending CMD6
+Sending CMD55
+Sending CMD6
+Buswidth = 4, clock: 400000
+clk_set_rate(clk=7be42698, rate=400000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Sending CMD55
+Sending CMD13
+Buswidth = 4, clock: 50000000
+clk_set_rate(clk=7be42698, rate=50000000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+blk_find_device: if_type=6, devnum=1: dwmmc@ff0c0000.blk, 6, 1
+Sending CMD16
+Sending CMD17
+part_init: try 'EFI': ret=-1
+part_test_rkparm
+part_init: try 'RKPARM': ret=0
+Sending CMD18
+dwmci_data_transfer: DATA ERROR!
+mmc_bread: Re-init mmc_read_blocks error
+gpio_request_tail: Node 'dwmmc@ff0c0000', property 'cd-gpios', failed to request GPIO index 0: -2
+ofnode_read_u32: vmmc-supply: of_read_u32: vmmc-supply: 0xd (13)
+dwmmc@ff0c0000: No vmmc supply
+Buswidth = 1, clock: 50000000
+clk_set_rate(clk=7be42698, rate=50000000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Buswidth = 1, clock: 400000
+clk_set_rate(clk=7be42698, rate=400000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Buswidth = 1, clock: 400000
+clk_set_rate(clk=7be42698, rate=400000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Sending CMD0
+Sending CMD8
+Sending CMD55
+Sending CMD41
+Sending CMD55
+Sending CMD41
+Sending CMD2
+Sending CMD3
+Sending CMD9
+Sending CMD7
+Sending CMD55
+Unaligned buffer length 8
+Sending CMD51
+Sending CMD6
+Sending CMD6
+Sending CMD55
+Sending CMD6
+Buswidth = 4, clock: 400000
+clk_set_rate(clk=7be42698, rate=400000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Sending CMD55
+Sending CMD13
+Buswidth = 4, clock: 50000000
+clk_set_rate(clk=7be42698, rate=50000000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+blk_find_device: if_type=6, devnum=1: dwmmc@ff0c0000.blk, 6, 1
+Sending CMD16
+Sending CMD17
+part_init: try 'EFI': ret=-1
+part_test_rkparm
+part_init: try 'RKPARM': ret=0
+Sending CMD18
+dwmci_data_transfer: DATA ERROR!
+mmc_bread: Re-init mmc_read_blocks error
+gpio_request_tail: Node 'dwmmc@ff0c0000', property 'cd-gpios', failed to request GPIO index 0: -2
+ofnode_read_u32: vmmc-supply: of_read_u32: vmmc-supply: 0xd (13)
+dwmmc@ff0c0000: No vmmc supply
+Buswidth = 1, clock: 50000000
+clk_set_rate(clk=7be42698, rate=50000000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Buswidth = 1, clock: 400000
+clk_set_rate(clk=7be42698, rate=400000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Buswidth = 1, clock: 400000
+clk_set_rate(clk=7be42698, rate=400000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Sending CMD0
+Sending CMD8
+Sending CMD55
+Sending CMD41
+Sending CMD55
+Sending CMD41
+Sending CMD2
+Sending CMD3
+Sending CMD9
+Sending CMD7
+Sending CMD55
+Unaligned buffer length 8
+Sending CMD51
+Sending CMD6
+Sending CMD6
+Sending CMD55
+Sending CMD6
+Buswidth = 4, clock: 400000
+clk_set_rate(clk=7be42698, rate=400000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Sending CMD55
+Sending CMD13
+Buswidth = 4, clock: 50000000
+clk_set_rate(clk=7be42698, rate=50000000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+blk_find_device: if_type=6, devnum=1: dwmmc@ff0c0000.blk, 6, 1
+Sending CMD16
+Sending CMD17
+part_init: try 'EFI': ret=-1
+part_test_rkparm
+part_init: try 'RKPARM': ret=0
+Sending CMD18
+dwmci_data_transfer: DATA ERROR!
+mmc_bread: Re-init mmc_read_blocks error
+gpio_request_tail: Node 'dwmmc@ff0c0000', property 'cd-gpios', failed to request GPIO index 0: -2
+ofnode_read_u32: vmmc-supply: of_read_u32: vmmc-supply: 0xd (13)
+dwmmc@ff0c0000: No vmmc supply
+Buswidth = 1, clock: 50000000
+clk_set_rate(clk=7be42698, rate=50000000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Buswidth = 1, clock: 400000
+clk_set_rate(clk=7be42698, rate=400000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Buswidth = 1, clock: 400000
+clk_set_rate(clk=7be42698, rate=400000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Sending CMD0
+Sending CMD8
+Sending CMD55
+Sending CMD41
+Sending CMD55
+Sending CMD41
+Sending CMD2
+Sending CMD3
+Sending CMD9
+Sending CMD7
+Sending CMD55
+Unaligned buffer length 8
+Sending CMD51
+Sending CMD6
+Sending CMD6
+Sending CMD55
+Sending CMD6
+Buswidth = 4, clock: 400000
+clk_set_rate(clk=7be42698, rate=400000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+Sending CMD55
+Sending CMD13
+Buswidth = 4, clock: 50000000
+clk_set_rate(clk=7be42698, rate=50000000)
+rockchip_mmc_set_clk: gclk_rate=594000000
+blk_find_device: if_type=6, devnum=1: dwmmc@ff0c0000.blk, 6, 1
+Sending CMD16
+Sending CMD17
+part_init: try 'EFI': ret=-1
+part_test_rkparm
+part_init: try 'RKPARM': ret=0
+Sending CMD18
+dwmci_data_transfer: DATA ERROR!
+mmc_bread: Re-init mmc_read_blocks error
+Re-init retry timeout
+init_kernel_dtb dtb in resource read fail
+initcall: 0003e2bd (relocated to 7de872bd)
+efi_add_memory_map: 0x0 0x8400 7 no
+efi_add_memory_map: 0x9200000 0x76e00 7 no
+efi_add_memory_map: 0x7ae3d000 0x51c3 2 no
+efi_add_memory_map: 0x7debd000 0x1 5 no
+initcall: 00013ba1 (relocated to 7de5cba1)
+initcall: 0000db09 (relocated to 7de56b09)
+ofnode_read_u32: reg-offset: of_read_u32: reg-offset: (not found)
+ofnode_read_u32: reg-shift: of_read_u32: reg-shift: 0x2 (2)
+clk_get_by_indexed_prop(dev=7be41fd0, index=0, clk=7be3d050)
+of_read_u32: #clock-cells: 0x1 (1)
+clk_of_xlate_default(clk=7be3d050)
+clk_request(dev=7be421a8, clk=7be3d050)
+clk_get_rate(clk=7be3d050)
+ofnode_read_u32: clock-frequency: of_read_u32: clock-frequency: 0x16e3600 (24000000)
+initcall: 0000daf5 (relocated to 7de56af5)
+Now running in RAM - U-Boot at: 7de49000
+initcall: 0000dbff (relocated to 7de56bff)
+initcall: 0000daad (relocated to 7de56aad)
+initcall: 0000dc05 (relocated to 7de56c05)
+initcall: 00013bb5 (relocated to 7de5cbb5)
+initcall: 0000dae9 (relocated to 7de56ae9)
+initcall: 000111f9 (relocated to 7de5a1f9)
+uclass_get_device_by_seq
+No video device for seq 0 (vidconsole)
+uclass_get_device_by_seq
+No video device for seq 0 (vidconsole)
+In:    serial
+Out:   serial
+Err:   serial
+initcall: 00011109 (relocated to 7de5a109)
+initcall: 0000dc31 (relocated to 7de56c31)
+Model: Firefly-RK3288
+initcall: 0000dad1 (relocated to 7de56ad1)
+initcall: 00001675 (relocated to 7de4a675)
+Initial value for argc=3
+Final value for argc=3
+Initial value for argc=3
+Final value for argc=3
+initcall: 0000dabd (relocated to 7de56abd)
+Net:   No ethernet found.
+initcall: 0000dab5 (relocated to 7de56ab5)
+Unknown command 'usb' - try 'help'
+fdtdec_get_config_int: bootdelay
+fdtdec_get_int: bootdelay: (not found)
+### main_loop entered: bootdelay=12
+
+fdtdec_get_config_int: kernel-offset
+fdtdec_get_int: kernel-offset: (not found)
+fdtdec_get_config_int: rootdisk-offset
+fdtdec_get_int: rootdisk-offset: (not found)
+fdtdec_get_config_string: bootcmd
+fdtdec_get_config_int: bootsecure
+fdtdec_get_int: bootsecure: (not found)
+### main_loop: bootcmd="boot_android ${devtype} ${devnum};bootrkp;run distro_bootcmd;"
+Hit any key to stop autoboot:  0 
+++++++++++++=============== autoboot_commandled_get_by_label: label=firefly:blue:user
+led_gpio_probe
+led_gpio_probe
+of_read_u32: #gpio-cells: 0x2 (2)
+desc->dev->name:gpio8@ff7f0000: func:set_dir: : gpio I1  reserved
+led_set_state
+gpio_led_set_state   ledgpio->offset=1  flags=10
+dm_gpio_set_value
+desc->offset=1 desc->flags=10
+desc->dev->name:gpio8@ff7f0000: func:set_value: : gpio I1  reserved
+rockchip_gpio_set_value
+&regs->swport_dr=0xff7f0000  mask=0x2; 0
+led_get_by_label: label=firefly:green:power
+led_gpio_probe
+of_read_u32: #gpio-cells: 0x2 (2)
+desc->dev->name:gpio8@ff7f0000: func:set_dir: : gpio I2  reserved
+led_set_state
+gpio_led_set_state   ledgpio->offset=2  flags=10
+dm_gpio_set_value
+desc->offset=2 desc->flags=10
+desc->dev->name:gpio8@ff7f0000: func:set_value: : gpio I2  reserved
+rockchip_gpio_set_value
+&regs->swport_dr=0xff7f0000  mask=0x4; 0
+blk_find_device: if_type=6, devnum=1: dwmmc@ff0c0000.blk, 6, 1
+
+MMC read: dev # 1, block # 782336, count 14807 ... blk_find_device: if_type=6, devnum=1: dwmmc@ff0c0000.blk, 6, 1
+Sending CMD16
+dwmci_send_cmd: Response Timeout.
+mmc_bread: Failed to set blocklen
+0 blocks read: ERROR
+Command failed, result=1
+blk_find_device: if_type=6, devnum=1: dwmmc@ff0c0000.blk, 6, 1
+
+MMC read: dev # 1, block # 139264, count 2048 ... blk_find_device: if_type=6, devnum=1: dwmmc@ff0c0000.blk, 6, 1
+Sending CMD16
+dwmci_send_cmd: Response Timeout.
+mmc_bread: Failed to set blocklen
+0 blocks read: ERROR
+Command failed, result=1
+run_command_list:aip
+do_aip 
+0xffffe7ff,0xffbfff6f,0xffffffff,0xfffffffb,0xffffffbf
+ cls clear screen inter app!:0xffffe7ff   0x7de94114
+ 
